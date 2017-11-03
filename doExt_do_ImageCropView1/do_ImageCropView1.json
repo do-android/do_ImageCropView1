@@ -1,0 +1,63 @@
+{
+  "ID": "do_ImageCropView1",
+  "IsContainer": "0",
+  "Type": "UI",
+  "UIType": "View",
+  "Name": "图片裁剪视图",
+  "Version": "Internal",
+  "Description": "图片裁剪视图，裁剪区域可以拖动和缩放，能设置view的基本属性，宽高等",
+  "Icon": "",
+  "BBS": "",
+  "Keyword": "图片处理",
+  "IOS": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Android": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Windows": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "WindowsPhone": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [
+    {
+      "ID": "source",
+      "Name": "图片路径",
+      "Type": "String",
+      "Type_JavaScript": "String",
+      "DefaultValue": "",
+      "EditType": "1",
+      "Group": "",
+      "Description": "可设置本地文件，支持 data:// source:// 打头",
+      "Design": {
+        "Type": "Richtext",
+        "Data": []
+      },
+      "Deprecated": false
+    }
+  ],
+  "Events": [],
+  "syncMethodes": [],
+  "asyncMethodes": [
+    {
+      "ID": "crop",
+      "Name": "裁剪图片",
+      "Description": "根据裁剪区域，裁剪图片",
+      "ReturnType": "String",
+      "ReturnType_JavaScript": "String",
+      "ReturnDesc": "返回裁剪图片的路径",
+      "Paras": [],
+      "Deprecated": false
+    }
+  ]
+}
